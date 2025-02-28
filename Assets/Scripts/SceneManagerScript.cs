@@ -24,6 +24,11 @@ public class SceneManagerScript : MonoBehaviour
         SceneManager.LoadScene("KatakanaScene");
     }
 
+    public void StartLevel(string nameLevel)
+    {
+        SceneManager.LoadScene(nameLevel);
+    }
+
     public void Exit()
     {
 
