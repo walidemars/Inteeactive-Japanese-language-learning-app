@@ -29,7 +29,6 @@ public class LevelsManager : MonoBehaviour
     }
 
     
-
     void Start()
     {
         currentMiniGame = 0;
@@ -67,7 +66,7 @@ public class LevelsManager : MonoBehaviour
             currentMiniGame = 0;
             nextMiniGame = currentMiniGame + 1;
             SceneManager.LoadScene("HiraganaScene");
-        }
-        
-    }    
+        }       
+    }
+   
 }
