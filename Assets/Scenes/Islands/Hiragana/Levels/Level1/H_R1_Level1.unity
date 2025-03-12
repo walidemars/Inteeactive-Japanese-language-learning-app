@@ -710,7 +710,6 @@ MonoBehaviour:
   miniGames:
   - H_R1_Level1
   - RunJumpSamurai
-  - RunJumpSamurai
 --- !u!1 &1018398086
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,6 +10,8 @@ public class MiniGameManager : MonoBehaviour
 
     [Header("Game Settings")]
     [SerializeField] private int startPoints = 50;
+    public GameObject spawnManagerObj;
+    private SpawnManager spawnManager;
 
     [Header("UI References")]
     [SerializeField] private GameObject winPanel;
@@ -30,6 +32,7 @@ public class MiniGameManager : MonoBehaviour
     {
         gameOver = false;
         InitializeGame();
+        spawnManager = spawnManagerObj.GetComponent<SpawnManager>();
     }
 
     private void Update()
@@ -37,7 +40,7 @@ public class MiniGameManager : MonoBehaviour
         UpdatePointsDisplay();
         CheckWinCondition();
         CheckLoseCondition();
-
+        //AddIeroglifDic();
         //TestGame();
     }
 
@@ -86,9 +89,9 @@ public class MiniGameManager : MonoBehaviour
     {
         Time.timeScale = 0f;
         if (winPanel) winPanel.SetActive(true);
-
+        AddIeroglifDic();
         //LevelsManager.Instance.NextGame();
-        
+
     }
 
     private void LoseGame()
@@ -130,5 +133,16 @@ public class MiniGameManager : MonoBehaviour
         // Останавливаем игровой процесс, устанавливая timeScale в 0.
         Time.timeScale = 0;
         Debug.Log("Game Over!");
+    }
+
+    public void AddIeroglifDic()
+    {
+        if (LevelsManager.Instance.nextMiniGame >= LevelsManager.Instance.miniGames.Length)
+        {
+            for (int i = 0; i < spawnManager.ieroglifPrefabs.Length; i++)
+            {
+                DictionaryManager.Instance.AddIeroglyf(spawnManager.ieroglifPrefabs[i]);
+            }
+        }
     }
 }

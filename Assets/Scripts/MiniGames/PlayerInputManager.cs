@@ -55,7 +55,7 @@ public class PlayerInputManager : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Ieroglif"))
         {
-            gameManager.AddPoints(5);
+            gameManager.AddPoints(10);
             Destroy(collision.gameObject);
         }
     }

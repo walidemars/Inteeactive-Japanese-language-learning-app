@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Scenes/ProfileScene.unity
     guid: af11294981b7f564d96b6d29daf4f8e5
   - enabled: 1
+    path: Assets/Scenes/Dictionary/Ieroglif Dictionary.unity
+    guid: 25ced4750fa7aa64699e76c5b0467e9f
+  - enabled: 1
     path: Assets/Scenes/Main Scenes/SettingsScene.unity
     guid: 3e807b893044de243be643db65d8f3d5
   - enabled: 1

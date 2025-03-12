@@ -7,8 +7,8 @@ public class LevelsManager : MonoBehaviour
 {
     public static LevelsManager Instance { get; private set; }
 
-    [SerializeField] private int currentMiniGame;
-    [SerializeField] private int nextMiniGame;
+    [SerializeField] public int currentMiniGame;
+    [SerializeField] public int nextMiniGame;
     [SerializeField] private string levelSelectionScene;
 
     public string[] miniGames;
