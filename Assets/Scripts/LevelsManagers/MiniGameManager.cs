@@ -29,11 +29,7 @@ public class MiniGameManager : MonoBehaviour
     void Start()
     {
         gameOver = false;
-        //levelManager = GameObject.Find("Levels Manager").GetComponent<LevelsManager>();
         InitializeGame();
-        //addPointAction = InputSystem.actions.FindAction("Attack");
-        //subtractPointAction = InputSystem.actions.FindAction("Jump");
-        //InvokeRepeating();
     }
 
     private void Update()
