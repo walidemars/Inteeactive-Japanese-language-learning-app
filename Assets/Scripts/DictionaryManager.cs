@@ -3,8 +3,9 @@ using UnityEngine;
 
 public class DictionaryManager : MonoBehaviour
 {
-    public static DictionaryManager Instance; // Singleton для удобного доступа
+    public static DictionaryManager Instance;
     private List<GameObject> learnedIeroglyfs = new List<GameObject>(); // Список изученных иероглифов
+    private List<GameObject> learnedWords = new List<GameObject>(); // Список изученных слов
 
     void Awake()
     {

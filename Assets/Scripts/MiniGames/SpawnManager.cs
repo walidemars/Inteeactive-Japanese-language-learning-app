@@ -23,12 +23,12 @@ public class SpawnManager : MonoBehaviour
     {
         if (Random.value < chance) // шанс на иероглиф
         {
-            Debug.Log("Иероглиф заспавнен");
+            //Debug.Log("Иероглиф заспавнен");
             SpawnIeroglif();
         }
         else // шанс на препятствие
         {
-            Debug.Log("Препятствие заспавнено");
+            //Debug.Log("Препятствие заспавнено");
             SpawnObstacle();
         }
     }
